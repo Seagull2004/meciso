@@ -1,0 +1,337 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <title>Meccanica Isontina. Lavorazioni meccaniche di precisione</title>
+  <link rel="icon" href="./img/only_logo.png" type="img">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="./js/jquery.js"></script>
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script>
+    function MM_openBrWindow(theURL, winName, features) 
+    {
+      window.open(theURL, winName, features);
+    }
+
+    function Menu(e){
+      let list = document.querySelector('ul');
+      if(e.name == 'menu')
+      {
+        e.name = "close",list.classList.add('top-[80px]')
+        list.classList.add('opacity-100')
+      }
+      else
+      {
+        e.name = "menu"
+        list.classList.remove('top-[80px]')
+        list.classList.remove('opacity-100')
+      }
+    }
+
+    function toggleInfo()
+    {
+      var info = document.getElementById('info')
+      $(info).toggle(300)
+    }
+
+    function closeInfo()
+    {
+      var info = document.getElementById('info')
+      $(info).hide(300)
+    }
+  </script>
+</head>
+
+<body class="bg-white font-mont">
+
+  <header class="relative">
+    <nav class="navigation fixed top-0 left-0 w-full z-30 duration-300 bg-gradient-to-r from-gray-700 to-gray-800 p-5 border-b-2 border-white
+    lg:flex lg:items-center lg:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl cursor-pointer z-[20] pl-5">
+          <a href="./index.html">
+            <img 
+            class="h-14 inline hover:scale-105 transition ease-out duration-300"
+            src="./img/logo.png" 
+            alt="Lavorazioni meccaniche di precisione, Meccanica Isontina"
+            >
+          </a>
+        </span>
+  
+        <span class="text-white text-3xl cursor-pointer mx-5 lg:hidden block hover:text-orange-500 duration-500 pr-0 sm:pr-10 z-[20]">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+  
+      <ul
+      class="absolute w-full left-0 pl-7 opacity-0 top-[-400px] transition-all ease-out duration-500 pr-10 z-[10] border-b-2 border-white lg:border-b-0
+      bg-gradient-to-r from-gray-700 to-gray-800
+      lg:flex lg:items-center lg:static lg:w-auto lg:py-0 py-4 lg:pl-0 lg:opacity-100 lg:bg-gradient-to-r lg:from-transparent lg:to-transparent"
+      >
+        <li class="pt-5 mx-4 my-6 lg:my-0 lg:pt-0">
+          <a href="./index.html" class="text-white text-xl hover:text-orange-500 duration-500">Home</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./azienda.html" class="text-white text-white text-xl hover:text-orange-500 duration-500">Azienda</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./prodotti.html" class="text-white text-xl hover:text-orange-500 duration-500">Prodotti</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./certificazioni.html" class="text-white text-xl hover:text-orange-500 duration-500">Certificazioni</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./contatti.html" class="text-orange-500 text-xl hover:text-orange-500 duration-500">Contatti</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+	
+
+  <!-- component -->
+  <section class="text-gray-600 body-font relative pt-40">
+    <div class="absolute inset-0 bg-gray-300">
+      <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.915192914592!2d13.583794316036588!3d45.91300537910892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b0768c5fa1351%3A0xce20bb21ed35af1c!2sMeccanica%20Isontina%20S.r.l.%20Lavorazioni%20Meccaniche%20di%20Precisione!5e0!3m2!1sit!2sit!4v1668536658247!5m2!1sit!2sit"></iframe>
+    </div>
+    <div class="container px-5 py-24 mx-auto flex">   
+      <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <button class="absolute right-2 top-2 cursor-pointer" onclick="toggleInfo()" onblur="closeInfo()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+          </svg> 
+        </button>  
+        <div id="info" class="bg-white rounded absolute right-9 top-3 p-5 border-2 border-black z-20 hidden">
+          <ul class="text-xs text-gray-500 m-2">
+            <li>
+              MECCANICA ISONTINA S.R.L.
+            </li>
+            <li>
+              Via Gabrscek, 11/1 (Zona Industriale)
+            </li>
+            <li>
+              34170 Gorizia. Italia
+            </li>
+            <li>
+              Tel. +39 0481 21669
+            </li> 
+            <li>
+              Fax +39 0481 521595
+            </li>
+            <li>
+              info@meccanicaisontina.com
+            </li>
+            <li>
+              Cap. Soc. € 10.000,00 i.v.
+            </li>
+            <li>
+              Partita I.V.A. IT 01063950313
+            </li>
+            <li>
+              C.F. 01063950313
+            </li>
+            <li>
+              Iscriz. Reg. Imprese GO 01063950313
+            </li>
+          </ul>
+        </div>
+
+
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
+          Richiedi informazione
+        </h2>
+        <p class="leading-relaxed mb-5 text-gray-600">
+          Per richiedere informazioni Vi chiediamo di compilare il modulo predisposto.
+          I campi contrassegnati dal * sono obbligatori.
+        </p>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">
+            * Azienda
+          </label>
+          <input type="text" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label class="leading-7 text-sm text-gray-600">
+            * Nome / Cognome
+          </label>
+          <input type="text" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label class="leading-7 text-sm text-gray-600">
+            Città
+          </label>
+          <input type="text" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label class="leading-7 text-sm text-gray-600">
+            CAP
+          </label>
+          <input type="text" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label class="leading-7 text-sm text-gray-600">
+            Telefono
+          </label>
+          <input type="text" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label class="leading-7 text-sm text-gray-600">
+            Fax
+          </label>
+          <input type="text" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label class="leading-7 text-sm text-gray-600">
+            * E-mail
+          </label>
+          <input type="email" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">
+            Messaggio
+          </label>
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <div class="relative mb-4 flex flew-row">
+          <input type="checkbox" checked="" class="focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <label class="leading-7 text-sm text-gray-600 ml-1 cursor-pointer" onclick="MM_openBrWindow('./privacy.html','','width=550,height=700')">
+            * Ho letto l'informativa sulla privacy
+          </label>
+        </div>
+        <button class="transform hover:scale-105 transition ease-out duration-300 flex flex-wrap justify-center font-sans rounded-lg bg-orange-500 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-orange-500">
+          Invia
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="relative bg-gradient-to-r from-gray-700 to-gray-800 py-8 text-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap text-center lg:text-center">
+        <div class="w-full lg:w-1/3 px-4 ml-auto">
+          <span class="block uppercase text-blueGray-500 text-sm mb-2 hover:text-orange-500 duration-500 cursor-default">
+            Recapiti
+          </span>
+          <ul class="list-unstyled">
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Via Gabrscek 11/1 Z.I.
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                34170 Gorizia. Italia
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Tel. +39 0481 21669
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Fax +39 0481 521595
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                C.F. e P.Iva 01063950313
+              </a>
+            </li>
+          </ul>
+          <hr class="my-6 border-blueGray-300 lg:hidden">
+        </div>
+        <div class="w-full lg:w-1/3 px-4">
+          <span class="block uppercase text-blueGray-500 text-sm mb-2 hover:text-orange-500 duration-500 cursor-default">
+            Scopri di più
+          </span>
+          <ul class="list-unstyled">
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./azienda.html">
+                Azienda
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./certificazioni.html">
+                Certificazioni
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Contatti
+              </a>
+            </li>
+          </ul>
+          <hr class="my-6 border-blueGray-300 lg:hidden">
+        </div>
+        <div class="w-full lg:w-1/3 px-4">
+          <span class="block uppercase text-blueGray-500 text-sm mb-2 hover:text-orange-500 duration-500 cursor-default">
+            Altre informazioni
+          </span>
+          <ul class="list-unstyled">
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./noteLegali.html">
+                Legal notes
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./privacyPolicy.html">
+                Policy Privacy
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="https://www.whygroup.it/"
+              target="_blank">
+                Credits
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-6 border-blueGray-300">
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-blueGray-500 py-1">
+            <span class="hover:text-orange-500 duration-500 cursor-default">
+              Copyright
+            </span>
+            <span id="get-current-year" class="hover:text-orange-500 duration-500 cursor-default">2021</span>
+            <a href="#" class="text-blueGray-500 hover:text-orange-500 duration-500 cursor-pointer"> 
+              © MECCANICA ISONTINA S.R.L.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

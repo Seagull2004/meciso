@@ -1,0 +1,314 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <title>Meccanica Isontina. Lavorazioni meccaniche di precisione</title>
+  <link rel="icon" href="./img/only_logo.png" type="img">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="./js/jquery.js"></script>
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      if(e.name == 'menu')
+      {
+        e.name = "close",list.classList.add('top-[80px]')
+        list.classList.add('opacity-100')
+      }
+      else
+      {
+        e.name = "menu"
+        list.classList.remove('top-[80px]')
+        list.classList.remove('opacity-100')
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white font-mont">
+  
+  <header class="relative">
+    <nav class="navigation fixed top-0 left-0 w-full z-30 duration-300 bg-gradient-to-r from-gray-700 to-gray-800 p-5 border-b-2 border-white
+    lg:flex lg:items-center lg:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl cursor-pointer z-[20] pl-5">
+          <a href="./index.html">
+            <img 
+            class="h-14 inline hover:scale-105 transition ease-out duration-300"
+            src="./img/logo.png" 
+            alt="Lavorazioni meccaniche di precisione, Meccanica Isontina"
+            >
+          </a>
+        </span>
+  
+        <span class="text-white text-3xl cursor-pointer mx-5 lg:hidden block hover:text-orange-500 duration-500 pr-0 sm:pr-10 z-[20]">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+  
+      <ul
+      class="absolute w-full left-0 pl-7 opacity-0 top-[-400px] transition-all ease-out duration-500 pr-10 z-[10] border-b-2 border-white lg:border-b-0
+      bg-gradient-to-r from-gray-700 to-gray-800
+      lg:flex lg:items-center lg:static lg:w-auto lg:py-0 py-4 lg:pl-0 lg:opacity-100 lg:bg-gradient-to-r lg:from-transparent lg:to-transparent"
+      >
+        <li class="pt-5 mx-4 my-6 lg:my-0 lg:pt-0">
+          <a href="./index.html" class="text-white text-xl hover:text-orange-500 duration-500">Home</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./azienda.html" class="text-white text-xl hover:text-orange-500 duration-500">Azienda</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./prodotti.html" class="text-white text-xl hover:text-orange-500 duration-500">Prodotti</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./certificazioni.html" class="text-white text-xl hover:text-orange-500 duration-500">Certificazioni</a>
+        </li>
+        <li class="mx-4 my-6 lg:my-0">
+          <a href="./contatti.html" class="text-white text-xl hover:text-orange-500 duration-500">Contatti</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="mt-10 py-40 px-10 sm:px-32 flex flex-wrap justify-center">
+    <div class="lg:pl-20 md:max-w-full flex flex-wrap justify-center flex-col w-full mr-50">
+      <h1 class="text-5xl">
+        Privacy Policy
+      </h1>
+      <h2 class="text-4xl py-10">
+        Meccanica Isontina S.r.l.
+      </h2>
+      <div class="flex flex-wrap items-center text-justify text-l">
+        <ul>
+          <li>
+            Zona Industriale Via Gabrscek 11/1
+          </li>
+          <li>
+            34170 Gorizia (GO)
+          </li>
+          <li>
+            P.IVA 01063950313
+          </li>
+          <li>
+            Tel. +39 0481 21669
+          </li>
+          <li>
+            Fax. +39 0481 521595
+          </li>
+          <li>
+            Email: info@meccanicaisontina.com
+          </li>
+          <br>
+          <li>
+            Cap. Soc. €10.000,00 i.v.
+          </li>
+          <li>
+            Iscriz. Reg. Imprese GO C.F. e P.IVA 01063950313 
+          </li>
+        </ul>
+      </div>
+      <div class="text-justify text-l">
+        <h3 class="text-3xl pt-6">
+          Informativa privacy
+        </h3>
+        <p class="text-l pt-6">
+          La presente Informativa, resa da Meccanica Isontina Srl ai sensi degli artt. 13 e 14 del Regolamento UE 2016/679, ha lo scopo di informare l’utente circa le modalità di trattamento dei dati personali che lo riguardano al fine di garantire la privacy e la sicurezza dei dati che ciascun visitatore conferisce.
+        </p>
+        <h4 class="text-2xl pt-6">
+          Tipologia di dati trattati
+        </h4>
+        <p class="text-l pt-2">
+          Il sito web offre contenuti di tipo informativo e interattivo. Durante la navigazione del sito Meccanica Isontina potrà acquisire informazioni sul visitatore relativamente ai dati di navigazione e ad ulteriori categorie di dati:
+          <br>
+          <br>
+          I dati di navigazione sono i dati acquisiti dalle procedure software preposte al funzionamento di questo sito web la cui trasmissione è implicita nell’uso dei protocolli di comunicazione di Internet. In questa categoria di dati rientrano gli indirizzi IP, il tipo di browser utilizzato, il sistema operativo, il nome di dominio e gli indirizzi di siti web dai quali è stato effettuato l'accesso, le informazioni sulle pagine visitate dagli utenti all'interno del sito, l’orario d’accesso, la permanenza sulla singola pagina, l’analisi di percorso interno ed altri parametri relativi al sistema operativo e all’ambiente informatico dell’utente.
+          <br>
+          <br>
+          Ulteriori categorie di dati sono i dati personali forniti dal visitatore attraverso il sito, ad esempio, registrandosi e/o accedendo ad una area riservata e/o ad un servizio e/o partecipando a una delle iniziative lanciate da Meccanica Isontina da sola o in partnership con soggetti terzi, scrivendo ad un indirizzo di posta elettronica di Meccanica Isontina per richiedere informazioni oppure telefonando ad un nostro numero verde per avere un contatto diretto con il servizio clienti.
+        </p>
+
+        <h4 class="text-2xl pt-6">
+          Finalità del trattamento
+        </h4>
+        <p class="text-l pt-2">
+          Finalità del trattamento sono quelle di fornire il bene / servizio richiesto, gestire i contratti perfezionati ed espletare i relativi adempimenti amministrativi, contabili, fiscali e legali, nonché evadere le richieste inoltrate.
+          <br>
+          <br>
+          Ulteriori finalità sono quelle di rilevare l’esperienza d’uso delle nostre piattaforme, dei prodotti e servizi che offriamo e assicurare il corretto funzionamento delle pagine web e dei loro contenuti ed infine inviarle comunicazioni commerciali relative a promozioni e offerte per le quali potrebbe aver diritto a beneficiare nell'interesse del Titolare.
+          <br>
+          <br>
+          I dati raccolti da Meccanica Isontina non sono in ogni caso sottoposti a processi decisionali automatizzati.
+        </p>
+        <h4 class="text-2xl pt-6">
+          Modalità del trattamento
+        </h4>
+        <p class="text-l pt-2">
+          Il trattamento dei dati personali viene effettuato da personale allo scopo formato, utilizzando prevalentemente procedure e supporti elettronici. I dati vengono trattati per il tempo strettamente necessario a conseguire gli scopi per i quali sono stati raccolti in conformità ai principi di liceità, correttezza, non eccedenza e pertinenza previsti dalla vigente normativa privacy.
+          <br>
+          <br>
+          I dati forniti saranno trattati per tutta la durata del rapporto contrattuale in essere e ulteriormente conservati esclusivamente per il periodo previsto per l’adempimento di obblighi di legge, sempre che non risulti necessario conservarli ulteriormente per difendere o far valere un diritto o per rispondere a ordini delle Autorità. 
+        </p>
+        <h4 class="text-2xl pt-6">
+          Diritti degli interessati
+        </h4>
+        <p class="text-l pt-2">
+          In relazione al trattamento dei dati personali, secondo le modalità e nei limiti previsti dagli artt. dal 15 a 21 del GDPR, l’interessato ha diritto di esercitare i propri diritti ed in particolare di chiedere a Meccanica Isontina di:
+          <ul class="list-disc py-3">
+            <li>
+              accedere ai dati personali che lo riguardano
+            </li>
+            <li class="pt-2">
+              ottenere la rettifica o la cancellazione o la limitazione del trattamento degli stessi
+            </li>
+            <li class="pt-2">
+              richiedere i propri dati in formato leggibile
+            </li>
+            <li class="pt-2">
+              opporsi al trattamento
+            </li>
+            <li class="pt-2">
+              revocare il consenso 
+            </li>
+          </ul>
+          È inoltre diritto dell’interessato proporre reclamo dinanzi al Garante per la protezione dei dati personali qualora ritengano che i trattamenti che li riguardano violino il presente Regolamento.
+        </p>
+        <h4 class="text-2xl pt-6">
+          Titolare del trattamento
+        </h4>
+        <p class="text-l pt-2">
+          Titolare del trattamento è Meccanica Isontina Srl, con sede in Via Gabrscek 11/1 - 34170 GORIZIA, nella persona del legale rappresentante contattabile anche a mezzo mail all’indirizzo info@meccanicaisontina.com
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-gradient-to-r from-gray-700 to-gray-800 py-8 text-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap text-center lg:text-center">
+        <div class="w-full lg:w-1/3 px-4 ml-auto">
+          <span class="block uppercase text-blueGray-500 text-sm mb-2 hover:text-orange-500 duration-500 cursor-default">
+            Recapiti
+          </span>
+          <ul class="list-unstyled">
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Via Gabrscek 11/1 Z.I.
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                34170 Gorizia. Italia
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Tel. +39 0481 21669
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Fax +39 0481 521595
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                C.F. e P.Iva 01063950313
+              </a>
+            </li>
+          </ul>
+          <hr class="my-6 border-blueGray-300 lg:hidden">
+        </div>
+        <div class="w-full lg:w-1/3 px-4">
+          <span class="block uppercase text-blueGray-500 text-sm mb-2 hover:text-orange-500 duration-500 cursor-default">
+            Scopri di più
+          </span>
+          <ul class="list-unstyled">
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./azienda.html">
+                Azienda
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./certificazioni.html">
+                Certificazioni
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./contatti.html">
+                Contatti
+              </a>
+            </li>
+          </ul>
+          <hr class="my-6 border-blueGray-300 lg:hidden">
+        </div>
+        <div class="w-full lg:w-1/3 px-4">
+          <span class="block uppercase text-blueGray-500 text-sm mb-2 hover:text-orange-500 duration-500 cursor-default">
+            Altre informazioni
+          </span>
+          <ul class="list-unstyled">
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./noteLegali.html">
+                Legal notes
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="./privacyPolicy.html">
+                Policy Privacy
+              </a>
+            </li>
+            <li>
+              <a 
+              class="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm hover:text-orange-500 duration-500" 
+              href="https://www.whygroup.it/"
+              target="_blank">
+                Credits
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-6 border-blueGray-300">
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-blueGray-500 py-1">
+            <span class="hover:text-orange-500 duration-500 cursor-default">
+              Copyright
+            </span>
+            <span id="get-current-year" class="hover:text-orange-500 duration-500 cursor-default">2021</span>
+            <a href="#" class="text-blueGray-500 hover:text-orange-500 duration-500 cursor-pointer"> 
+              © MECCANICA ISONTINA S.R.L.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
